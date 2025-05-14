@@ -4,7 +4,7 @@ pragma solidity ^0.8.13;
 import {Script, console} from "forge-std/Script.sol";
 import {AlphonsoGI} from "../src/AlphonsoGI.sol";
 
-contract CAlphonsoGIScript is Script {
+contract DeployScript  is Script {
     AlphonsoGI public alphonsoGI;
 
     function setUp() public {}

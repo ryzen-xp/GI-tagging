@@ -4,13 +4,16 @@ const fs = require("fs");
 const Web3 = require("web3");
 const path = require("path");
 
-const abi = JSON.parse(
-  fs.readFileSync(path.join(__dirname, "../abi.json"), "utf8")
+const ABI = JSON.parse(
+  fs.readFileSync(
+    path.join(__dirname, "../out/AlphonsoGI.sol/AlphonsoGI.json"),
+    "utf8"
+  )
 );
 
 const web3 = new Web3(process.env.RPC);
 
-const contract = new web3.eth.Contract(abi, process.env.CONTRACT);
+const contract = new web3.eth.Contract(ABI.abi, process.env.CONTRACT);
 
 const app = express();
 const port = 3000;

@@ -9,6 +9,22 @@ forge build
 forge test
 ```
 
+### Setup `.env`(given below is fake private key keep in mind never share private key )
+
+```env
+ADMIN_ADDRESS=
+LAB_ADDRESS=
+REGULATOR_ADDRESS=
+RPC=https://sepolia.infura.io/v3/
+PRIVATE_KEY=
+ETHERSCAN_API_KEY=
+
+
+CONTRACT=0xe47a734d707f99e8573c4692139f75342c162174
+
+
+```
+
 ### Deploy to Sepolia
 
 ```bash
@@ -24,22 +40,6 @@ forge script script/Deploy.s.sol:DeployScript \
 ---
 
 ## Run Backend API
-
-### 1. Setup `.env`(given below is fake private key keep in mind never share private key )
-
-```env
-ADMIN_ADDRESS=
-LAB_ADDRESS=
-REGULATOR_ADDRESS=
-RPC=https://sepolia.infura.io/v3/
-PRIVATE_KEY=
-ETHERSCAN_API_KEY=
-
-
-CONTRACT=0xe47a734d707f99e8573c4692139f75342c162174
-
-
-```
 
 ### 2. Start Server
 
